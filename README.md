@@ -1,3 +1,3 @@
 # Hello-word
-just a text
-Like this.
+All these files are texts,just do some 
+practices.
