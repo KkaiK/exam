@@ -5,3 +5,5 @@
 I can't input Chinese with BaiduPinyin.
 
 I like zsh !!!
+
+something on pc !
