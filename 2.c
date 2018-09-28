@@ -1,33 +1,24 @@
 #include<stdio.h>
-/*****************
-char text(char a)
-{
-	a = 10;
-	printf("A=%d\n",a);
-	return a;
-}
-
-
+void fuc();
 
 int main()
 {
-	//char a = 0x11;;
-	//a  a;
-	char b = 15;
+	extern char a;
+	printf("%d\n",a);
+	fuc();
+	printf("a: %p\n",&a);
 	char c;
-	c = text(b);
-	printf("B=%d\nC=%d\n",b,c);
-	return 0;
-
+	a=a+12;
+	char d;
+	printf("c: %p\nd :%p",&c,&d);
 }
-************************************/
-
-void main()
+char a=15;
+void fuc()
 {
-	printf("input A B C,at intervals of space.\n");
-	int A;int B;int C;
-	scanf("%d %d %d",&A,&B,&C);
-	printf("A is %d,B is %d,C is %d",A,B,C);
-	
-	
+	extern char a;
+	a=10;
+	int b=a;
+	printf("def=%d\nb: %p\n",b,&b);
+
+	return ;
 }
